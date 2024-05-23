@@ -22,7 +22,7 @@ const Hero = () =>{
                     Helping you get the quality staff since years !
                     </p>
                     <span  className="hidden lg:inline-block">
-                    <Link className="bg-[#731012] hover:bg-[#9e1518] transition-all text-gray-200 font-bold rounded-lg px-8 py-4" href="#">
+                    <Link className="bg-[#731012] hover:bg-[#9e1518] transition-all text-gray-200 font-bold rounded-lg px-8 py-4" href="/contact">
                         Contact Us
                     </Link>
                     </span>
@@ -32,7 +32,7 @@ const Hero = () =>{
                     
                     <Image loading="lazy" width={500} height={300} style={imageStyle} src={HeroSectionImage} alt="Hero Section." />
                     <span className="inline-block lg:hidden mt-6 w-full">
-                    <Link className="bg-[#731012] w-full inline-block text-center text-gray-200 font-bold rounded-lg px-8 py-4" href="#">
+                    <Link className="bg-[#731012] w-full inline-block text-center text-gray-200 font-bold rounded-lg px-8 py-4" href="/contact">
                         Contact Us
                     </Link>
                     </span>

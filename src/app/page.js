@@ -3,7 +3,6 @@ import { ContactCompo } from "@/components/Contact-Us-HomePage/ContactComponentH
 import Hero from "@/components/Main/Hero";
 import WhyChooseUs from "@/components/Main/Why-Choose-Us";
 import { Industries } from "@/components/Main/industries";
-
 export default function Home() {
   return (
     <>
