@@ -117,7 +117,7 @@ export const ContactCompo = () => {
               We are always <span className="text-[#61BB46]">happy to <br></br>
               reach you out !</span> </div>
             <div className="paragraph text-sm">
-            Drop us a message anytime; we're here and eager to connect with you!  Your feedback, inquiries, or collaboration ideas are always welcomed.  Let's build something amazing together!
+            Drop us a message anytime; we&apos;re here and eager to connect with you!  Your feedback, inquiries, or collaboration ideas are always welcomed.  Let&apos;s build something amazing together!
             </div>
           </div>
         </div>

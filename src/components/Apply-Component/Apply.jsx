@@ -73,7 +73,7 @@ const ApplyForm = () => {
             <h3 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold'>Apply for Jobs at Wallshin Group</h3>
           </div>
           <div>
-            <p className='text-[#434343]'>At Wallshin Group, we believe in fostering talent, empowering growth, and creating a dynamic work environment that encourages innovation and collaboration. If you're passionate about making a difference and thrive in a fast-paced, results-driven setting, we invite you to explore career opportunities with us.</p>
+            <p className='text-[#434343]'>At Wallshin Group, we believe in fostering talent, empowering growth, and creating a dynamic work environment that encourages innovation and collaboration. If you&apos;re passionate about making a difference and thrive in a fast-paced, results-driven setting, we invite you to explore career opportunities with us.</p>
           </div>
           <div>
             <p className='text-[#434343]'>To apply for a job at Wallshin Group, please fill out the form below and upload your resume:</p>
