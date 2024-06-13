@@ -15,11 +15,11 @@ const Hero = () =>{
                 <div className="grid py-8 lg:gap-6 lg:py-16 lg:grid-cols-12 container">
                     <div className="mainCont mr-auto place-self-center lg:col-span-7">
                     <h1 style={{color: "#313131", lineHeight:"1.3"}} className="max-w-2xl mb-2 md:mb-3 lg:mb-4 text-2xl lg:text-5xl font-bold tracking-tight leading-none md:text-5xl">
-                    Your <span className="text-[#61BB46]"> Trusted, Reliable</span> <br></br><span style={{color: "#313131"}}> <span className="text-[#731012]">Partner</span> for Hospitality <br></br> Services</span>
+                    THE <span className="text-[#61BB46]"> BENCHMARK OF</span> <br></br><span style={{color: "#313131"}}> <span className="text-[#731012]">HOSPITALITY</span> SERVICES <br></br> IN UAE</span>
                     </h1>
                     
                     <p style={{color: "var(--neutral-700, #313131)"}} className="max-w-2xl mb-6 text-justify font-normal lg:mb-8 text-sm md:text-[1rem]">
-                    Helping you get the quality staff since years !
+                    Walshinn Group stands as the premier provider of hospitality services in the UAE, setting the standard for excellence and innovation. Our tailored solutions ensure exceptional guest experiences and operational efficiency, making us the trusted partner for hotels, restaurants, and event venues across the region.
                     </p>
                     <span  className="hidden lg:inline-block">
                     <Link className="bg-[#731012] hover:bg-[#9e1518] transition-all text-gray-200 font-bold rounded-lg px-8 py-4" href="/contact">

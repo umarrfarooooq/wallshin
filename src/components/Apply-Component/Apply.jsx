@@ -4,13 +4,14 @@ import '../Contact-Us/Contact-us.css';
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import axios from "axios";
-
+import Spinner from '../ui/Spinner';
 const axiosInstance = axios.create({
   withCredentials: true,
   baseURL: process.env.NEXT_PUBLIC_API_URL,
 });
 
 const ApplyForm = () => {
+  const [loader, setLoader] = useState(false)
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -37,7 +38,7 @@ const ApplyForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoader(true)
     const applicationData = new FormData();
     applicationData.append('name', formData.name);
     applicationData.append('email', formData.email);
@@ -47,6 +48,7 @@ const ApplyForm = () => {
     try {
       const response = await axiosInstance.post("api/v1/applications/apply", applicationData);
       if (response.status === 201) {
+        setLoader(false)
         toast({
           description: "Your application has been sent.",
         });
@@ -58,6 +60,7 @@ const ApplyForm = () => {
         });
       }
     } catch (error) {
+      setLoader(false)
       console.error("Error sending application:", error);
       toast({
         description: "Failed to send application. Please try again later.",
@@ -70,13 +73,13 @@ const ApplyForm = () => {
       <div className='container py-8 md:py-12 lg:py-20'>
         <div className='flex flex-col gap-8'>
           <div>
-            <h3 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold'>Apply for Jobs at Wallshin Group</h3>
+            <h3 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold'>Apply for Jobs at Walshinn Group</h3>
           </div>
           <div>
-            <p className='text-[#434343]'>At Wallshin Group, we believe in fostering talent, empowering growth, and creating a dynamic work environment that encourages innovation and collaboration. If you&apos;re passionate about making a difference and thrive in a fast-paced, results-driven setting, we invite you to explore career opportunities with us.</p>
+            <p className='text-[#434343]'>At Walshinn Group, we believe in fostering talent, empowering growth, and creating a dynamic work environment that encourages innovation and collaboration. If you&apos;re passionate about making a difference and thrive in a fast-paced, results-driven setting, we invite you to explore career opportunities with us.</p>
           </div>
           <div>
-            <p className='text-[#434343]'>To apply for a job at Wallshin Group, please fill out the form below and upload your resume:</p>
+            <p className='text-[#434343]'>To apply for a job at Walshinn Group, please fill out the form below and upload your resume:</p>
           </div>
         </div>
         <form className="contactUsForm py-6 md:w-3/4" onSubmit={handleSubmit}>
@@ -118,8 +121,8 @@ const ApplyForm = () => {
               <input required id="cv-file" type="file" name="cv" onChange={handleFileChange} hidden />
             </label>
           </div>
-          <button type="submit" className="gradient-background text-white w-full inline-block text-center transition-all font-bold rounded-lg py-2">
-            Apply
+          <button type="submit" disabled={loader} className="gradient-background text-white w-full inline-block text-center transition-all font-bold rounded-lg py-2">
+            {loader ? <Spinner /> : "Apply Now"}
           </button>
         </form>
         <div className='flex flex-col gap-8'>

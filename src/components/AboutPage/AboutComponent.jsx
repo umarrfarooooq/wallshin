@@ -13,7 +13,7 @@ const AboutComponent = () => {
                         About
                     </h1>
                     <p style={{color: "var(--neutral-700, #313131)"}} className="max-w-2xl mb-6 text-justify font-normal lg:mb-8 text-sm md:text-[1rem]">
-                        Welcome to Wallshin Group, your trusted partner in delivering excellence  across diverse industries. With a commitment to innovation, quality,  and client satisfaction, we specialize in providing top-notch services  tailored to meet your unique needs. From hospitality to facility  management and beyond, Wallshin Group is your key to success in today&apos;s  dynamic business landscape.
+                        Welcome to Walshinn Group, your trusted partner in delivering excellence  across diverse industries. With a commitment to innovation, quality,  and client satisfaction, we specialize in providing top-notch services  tailored to meet your unique needs. From hospitality to facility  management and beyond, Walshinn Group is your key to success in today&apos;s  dynamic business landscape.
                     </p>
                     </div>
                     <div className="lg:mt-0 lg:col-span-6 lg:flex justify-end">
@@ -29,7 +29,7 @@ const AboutComponent = () => {
                     Our Mission
                     </h1>
                     <p style={{color: "var(--neutral-700, #313131)"}} className="max-w-2xl mb-6 text-justify font-normal lg:mb-8 text-sm md:text-[1rem]">
-                    At Wallshin Group, our mission is to empower businesses and  organizations by delivering tailored solutions that drive growth,  efficiency, and success. We are committed to fostering long-term  partnerships built on trust, integrity, and mutual success.
+                    At Walshinn Group, our mission is to empower businesses and  organizations by delivering tailored solutions that drive growth,  efficiency, and success. We are committed to fostering long-term  partnerships built on trust, integrity, and mutual success.
                     </p>
                     </div>
                 </div>

@@ -1,0 +1,34 @@
+{
+    "servicesData":[
+        {
+            "id": "1",
+            "name": "Cleaners",
+            "description": "At Walshinn Group, we understand that cleanliness is a cornerstone of hospitality excellence. Our professional cleaning services ensure that every corner of your establishment is spotless, creating a welcoming and hygienic environment for your guests.",
+            "image": "/services/cleaner.jpeg"
+        },
+        {
+            "id": "2",
+            "name": "Room Boy",
+            "description": "At Walshinn Group, our room boys play a vital role in maintaining the cleanliness and orderliness of guest rooms, ensuring a comfortable and pleasant stay for your guests. Their attention to detail and dedication to service excellence contribute significantly to the overall guest experience",
+            "image": "/services/room boy.jpeg"
+        },
+        {
+            "id": "3",
+            "name": "Waiter/Waitress",
+            "description": "At Walshinn Group, we understand that waitstaff play a crucial role in creating a memorable dining experience. Our team of professional waiters and waitresses are dedicated to providing exceptional service that enhances the overall atmosphere of your restaurant or event.",
+            "image": "/services/waiter.jpeg"
+        },
+        {
+            "id": "4",
+            "name": "Housekeeping Staff",
+            "description": "At Walshinn Group, our housekeeping staff are integral to maintaining the cleanliness, comfort, and overall atmosphere of your establishment. Their meticulous attention to detail and dedication to service excellence ensure that every guest enjoys a spotless and welcoming environment.",
+            "image": "/services/housekeeping.jfif"
+        },
+        {
+            "id": "5",
+            "name": "Helper",
+            "description": "At Walshinn Group, our helpers are essential for providing reliable support in tasks such as loading, unloading, and general assistance to ensure smooth and efficient operations in your establishment. Their dedication to hard work and efficiency makes them an invaluable part of your team.",
+            "image": "/services/helper.jpeg"
+        }
+    ]
+}

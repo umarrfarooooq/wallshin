@@ -25,10 +25,7 @@ input::-webkit-inner-spin-button {
 
 
 @media (max-width:1640px){
-    .contact-form-page{
-        flex-direction: column;
-    }
-
+    
     .contact-support{
         margin-left: 0 !important;
         margin-top: 5rem;

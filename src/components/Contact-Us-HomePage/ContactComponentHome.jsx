@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { useToast } from "@/components/ui/use-toast"
+import Spinner from "../ui/Spinner";
 import axios from "axios";
 const axiosInstense = axios.create({
   withCredentials: true,
@@ -8,6 +9,7 @@ const axiosInstense = axios.create({
 })
 
 export const ContactCompo = () => {
+  const [loader, setLoader] = useState(false)
   const { toast } = useToast()
   const [formData, setFormData] = useState({
     name: "",
@@ -26,10 +28,11 @@ export const ContactCompo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoader(true)
     try {
       const response = await axiosInstense.post("api/v1/messages/add", formData);
       if (response.status === 201) {
+        setLoader(false)
         toast({
           description: "Your message has been sent.",
         });
@@ -41,6 +44,7 @@ export const ContactCompo = () => {
         });
       }
     } catch (error) {
+      setLoader(false)
       console.error("Error sending message:", error);
       toast({
         description: "Failed to send message. Please try again later.",
@@ -104,10 +108,11 @@ export const ContactCompo = () => {
               </div>
             </div>
             <button 
+              disabled={loader}
               type="submit"
               className="bg-[#731012] transition-all hover:bg-[#942B04] active:bg-[#642107] text-sm rounded-lg py-3 w-full text-white"
             >
-              Submit
+              {loader ? <Spinner /> : "Submit"}
             </button>
           </form>
         </div>
