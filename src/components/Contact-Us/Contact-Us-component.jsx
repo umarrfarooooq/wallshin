@@ -126,14 +126,13 @@ const ContactUsComponent = () => {
                 <div className="flex items-start gap-4">
                   <PhoneIcon className="mt-1 h-6 w-6 text-gray-500 dark:text-gray-400" />
                   <div>
-                    <p className="font-medium">+971 54252 3647</p>
-                    <p className="text-gray-500 dark:text-gray-400">Monday - Friday, 9am to 5pm</p>
+                    <p className="font-medium">+971 52122 5646</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MailIcon className="mt-1 h-6 w-6 text-gray-500 dark:text-gray-400" />
                   <div>
-                    <p className="font-medium">BDM@WALSHINNGROUP.COM</p>
+                    <p className="font-medium">MARKETING@WALSHINNGROUP.COM</p>
                     <p className="text-gray-500 dark:text-gray-400">We will get back to you as soon as possible</p>
                   </div>
                 </div>
